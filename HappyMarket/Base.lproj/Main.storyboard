@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4I3-Bq-ZHl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="HappyMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ruh-Dl-K88">
+                                <rect key="frame" x="126" y="299" width="162" height="298"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykv-jk-oBy">
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Member"/>
+                                        <connections>
+                                            <action selector="openMember:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lEr-dJ-fbd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUT-Df-whr">
+                                        <rect key="frame" x="0.0" y="64" width="162" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Product Detail"/>
+                                        <connections>
+                                            <action selector="openProductDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7t-dc-0Nr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALq-0P-uUc">
+                                        <rect key="frame" x="0.0" y="128" width="162" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Delivery Status"/>
+                                        <connections>
+                                            <action selector="openDelivery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMv-SA-ZQx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwk-aL-yfX">
+                                        <rect key="frame" x="0.0" y="192" width="162" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Notifications"/>
+                                        <connections>
+                                            <action selector="openPromotions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Y4-Ai-7U7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3i-dh-QWn">
+                                        <rect key="frame" x="0.0" y="256" width="162" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Promotions"/>
+                                        <connections>
+                                            <action selector="openDelivery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeH-Em-zXN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ruh-Dl-K88" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5LC-EN-w5t"/>
+                            <constraint firstItem="Ruh-Dl-K88" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ll9-mp-ZVl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D76-eV-nNk"/>
+                    <connections>
+                        <segue destination="R0Z-S0-Mbt" kind="show" identifier="member" id="JiR-gV-b7E"/>
+                        <segue destination="8cc-Iz-d9i" kind="show" identifier="productDetail" id="6OV-HE-piU"/>
+                        <segue destination="7Gm-Wd-Tcq" kind="show" identifier="delivery" id="Tfb-hy-NKb"/>
+                        <segue destination="Kvu-Z0-SKo" kind="show" identifier="notifications" id="jh3-wT-IuW"/>
+                        <segue destination="qBq-AN-QNb" kind="show" identifier="promotions" id="F5f-2W-3xQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-907" y="-186"/>
+        </scene>
+        <!--Member View Controller-->
+        <scene sceneID="MAU-dN-aK3">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="R0Z-S0-Mbt" customClass="MemberViewController" customModule="HappyMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ABn-lo-QD9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="wzV-AD-rns">
+                                <rect key="frame" x="136" y="403.5" width="142" height="89"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Loged In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irv-mh-MzR">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvN-yp-fzC">
+                                        <rect key="frame" x="0.0" y="47" width="142" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginStatus:" destination="R0Z-S0-Mbt" eventType="touchUpInside" id="mPv-Yj-LgS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oNM-dT-CYX"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wzV-AD-rns" firstAttribute="centerY" secondItem="ABn-lo-QD9" secondAttribute="centerY" id="6yP-9z-NaT"/>
+                            <constraint firstItem="wzV-AD-rns" firstAttribute="centerX" secondItem="ABn-lo-QD9" secondAttribute="centerX" id="PEd-eu-Q4b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wX4-Vc-BNI"/>
+                    <connections>
+                        <outlet property="loginButton" destination="bvN-yp-fzC" id="pa3-BL-1MR"/>
+                        <outlet property="status" destination="Irv-mh-MzR" id="NfB-rd-DaV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jb8-h1-IbH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366.66666666666669" y="-660.26785714285711"/>
+        </scene>
+        <!--Product Detail View Controller-->
+        <scene sceneID="Bdo-3h-Ojl">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailViewController" id="8cc-Iz-d9i" customClass="ProductDetailViewController" customModule="HappyMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Up-CD-HxR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Detail's Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcE-OI-jXI">
+                                <rect key="frame" x="113" y="436" width="188" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q0s-Si-Q3M"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dcE-OI-jXI" firstAttribute="centerY" secondItem="3Up-CD-HxR" secondAttribute="centerY" id="2J3-V1-MgA"/>
+                            <constraint firstItem="dcE-OI-jXI" firstAttribute="centerX" secondItem="3Up-CD-HxR" secondAttribute="centerX" id="8cD-WC-rLU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="asg-2u-HTg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQv-W4-aEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366.66666666666669" y="2.6785714285714284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iuv-yf-YIz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4I3-Bq-ZHl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RP9-us-kJI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bxR-Ao-O4Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMk-8G-W9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1799" y="-186"/>
+        </scene>
+        <!--Deli Very View Controller-->
+        <scene sceneID="SsI-zq-sbf">
+            <objects>
+                <viewController storyboardIdentifier="DeliVeryViewController" id="7Gm-Wd-Tcq" customClass="DeliVeryViewController" customModule="HappyMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="idr-yb-ia5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Status's Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ge-4x-KA9">
+                                <rect key="frame" x="109.5" y="436" width="195.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uty-a7-lJw"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Ge-4x-KA9" firstAttribute="centerY" secondItem="idr-yb-ia5" secondAttribute="centerY" id="2Re-VH-rHd"/>
+                            <constraint firstItem="7Ge-4x-KA9" firstAttribute="centerX" secondItem="idr-yb-ia5" secondAttribute="centerX" id="CiS-yH-xiM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SnX-lz-vtY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OjX-Eb-BXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="727"/>
+        </scene>
+        <!--Notifications View Controller-->
+        <scene sceneID="Zsa-M3-NjX">
+            <objects>
+                <viewController storyboardIdentifier="NotificationsViewController" id="Kvu-Z0-SKo" customClass="NotificationsViewController" customModule="HappyMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tnT-tu-Tuj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications's Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-mI-fe5">
+                                <rect key="frame" x="120" y="436" width="174.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1DT-46-KEd"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UEb-mI-fe5" firstAttribute="centerX" secondItem="tnT-tu-Tuj" secondAttribute="centerX" id="era-tr-FQd"/>
+                            <constraint firstItem="UEb-mI-fe5" firstAttribute="centerY" secondItem="tnT-tu-Tuj" secondAttribute="centerY" id="fYO-Lb-jJP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hWS-Bg-o9h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzK-i2-VOa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-907" y="737"/>
+        </scene>
+        <!--Promotions View Controller-->
+        <scene sceneID="kCQ-hd-wSC">
+            <objects>
+                <viewController storyboardIdentifier="PromotionsViewController" id="qBq-AN-QNb" customClass="PromotionsViewController" customModule="HappyMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jQd-Pk-hv7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promotions's Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKa-fq-HNm">
+                                <rect key="frame" x="125" y="436" width="164" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mSl-kB-2LG"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LKa-fq-HNm" firstAttribute="centerX" secondItem="jQd-Pk-hv7" secondAttribute="centerX" id="O1a-dJ-Phr"/>
+                            <constraint firstItem="LKa-fq-HNm" firstAttribute="centerY" secondItem="jQd-Pk-hv7" secondAttribute="centerY" id="zQz-G2-Cc5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ejM-fE-s7G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AmR-H7-kPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-907" y="-933"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

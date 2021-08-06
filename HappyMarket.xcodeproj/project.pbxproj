@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD45097D26B45114002D8402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45097C26B45114002D8402 /* AppDelegate.swift */; };
+		BD45098126B45114002D8402 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45098026B45114002D8402 /* HomeViewController.swift */; };
+		BD45098426B45114002D8402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD45098226B45114002D8402 /* Main.storyboard */; };
+		BD45098626B45116002D8402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD45098526B45116002D8402 /* Assets.xcassets */; };
+		BD45098926B45116002D8402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD45098726B45116002D8402 /* LaunchScreen.storyboard */; };
+		BD4509AE26B45294002D8402 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4509AD26B45294002D8402 /* WidgetKit.framework */; };
+		BD4509B026B45294002D8402 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4509AF26B45294002D8402 /* SwiftUI.framework */; };
+		BD4509B526B45296002D8402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4509B426B45296002D8402 /* Assets.xcassets */; };
+		BD4509B926B45296002D8402 /* HappyMarketWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BD4509AB26B45294002D8402 /* HappyMarketWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BD4509BF26B452EB002D8402 /* HappyMarketWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4509BE26B452EB002D8402 /* HappyMarketWidget.swift */; };
+		BD4509C226B45AA9002D8402 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4509AD26B45294002D8402 /* WidgetKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BD4509C426B4639D002D8402 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4509C326B4639D002D8402 /* MemberViewController.swift */; };
+		BD4509C626B463B7002D8402 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4509C526B463B7002D8402 /* ProductDetailViewController.swift */; };
+		BD4509C826B464C3002D8402 /* DeliVeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4509C726B464C3002D8402 /* DeliVeryViewController.swift */; };
+		BD6814E626BB1B4500F2CEB8 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6814E526BB1B4500F2CEB8 /* NotificationsViewController.swift */; };
+		BD6814E826BB1C1600F2CEB8 /* PromotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6814E726BB1C1600F2CEB8 /* PromotionsViewController.swift */; };
+		BD90468C26B5BD1000739671 /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90468B26B5BD1000739671 /* SimpleEntry.swift */; };
+		BD90468E26B5BD2600739671 /* HappyMarketWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90468D26B5BD2600739671 /* HappyMarketWidgetEntryView.swift */; };
+		BD90469026B5C38900739671 /* LargeScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90468F26B5C38900739671 /* LargeScaleView.swift */; };
+		BD90469226B5C39400739671 /* MediumScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90469126B5C39400739671 /* MediumScaleView.swift */; };
+		BD90469426B5C39E00739671 /* SmallScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90469326B5C39E00739671 /* SmallScaleView.swift */; };
+		BDB3AE1626B70DAB00391C35 /* DB Adman X.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDB3AE1526B70DAB00391C35 /* DB Adman X.ttf */; };
+		BDF3C7CC26BC44E2007F3144 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF3C7C926BC44E2007F3144 /* NetworkManager.swift */; };
+		BDF3C7CD26BC44E2007F3144 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF3C7CA26BC44E2007F3144 /* ImageLoader.swift */; };
+		BDF3C7CE26BC44E2007F3144 /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF3C7CB26BC44E2007F3144 /* JsonModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD4509B726B45296002D8402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD45097126B45114002D8402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD4509AA26B45294002D8402;
+			remoteInfo = HappyMarketWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD4509BA26B45296002D8402 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BD4509B926B45296002D8402 /* HappyMarketWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BD23173626B9A38500E63FFD /* HappyMarket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HappyMarket.entitlements; sourceTree = "<group>"; };
+		BD23173726B9A3DB00E63FFD /* HappyMarketWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HappyMarketWidgetExtension.entitlements; sourceTree = "<group>"; };
+		BD45097926B45114002D8402 /* HappyMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD45097C26B45114002D8402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD45098026B45114002D8402 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BD45098326B45114002D8402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD45098526B45116002D8402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD45098826B45116002D8402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD45098A26B45116002D8402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD4509AB26B45294002D8402 /* HappyMarketWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HappyMarketWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4509AD26B45294002D8402 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BD4509AF26B45294002D8402 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BD4509B426B45296002D8402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD4509B626B45296002D8402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD4509BE26B452EB002D8402 /* HappyMarketWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyMarketWidget.swift; sourceTree = "<group>"; };
+		BD4509C326B4639D002D8402 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
+		BD4509C526B463B7002D8402 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		BD4509C726B464C3002D8402 /* DeliVeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliVeryViewController.swift; sourceTree = "<group>"; };
+		BD6814E526BB1B4500F2CEB8 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		BD6814E726BB1C1600F2CEB8 /* PromotionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsViewController.swift; sourceTree = "<group>"; };
+		BD90468B26B5BD1000739671 /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
+		BD90468D26B5BD2600739671 /* HappyMarketWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyMarketWidgetEntryView.swift; sourceTree = "<group>"; };
+		BD90468F26B5C38900739671 /* LargeScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeScaleView.swift; sourceTree = "<group>"; };
+		BD90469126B5C39400739671 /* MediumScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumScaleView.swift; sourceTree = "<group>"; };
+		BD90469326B5C39E00739671 /* SmallScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallScaleView.swift; sourceTree = "<group>"; };
+		BDB3AE1526B70DAB00391C35 /* DB Adman X.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB Adman X.ttf"; sourceTree = "<group>"; };
+		BDF3C7C926BC44E2007F3144 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BDF3C7CA26BC44E2007F3144 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		BDF3C7CB26BC44E2007F3144 /* JsonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD45097626B45114002D8402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4509C226B45AA9002D8402 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4509A826B45294002D8402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4509B026B45294002D8402 /* SwiftUI.framework in Frameworks */,
+				BD4509AE26B45294002D8402 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD45097026B45114002D8402 = {
+			isa = PBXGroup;
+			children = (
+				BD23173726B9A3DB00E63FFD /* HappyMarketWidgetExtension.entitlements */,
+				BD45097B26B45114002D8402 /* HappyMarket */,
+				BD4509B126B45294002D8402 /* HappyMarketWidget */,
+				BD4509AC26B45294002D8402 /* Frameworks */,
+				BD45097A26B45114002D8402 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD45097A26B45114002D8402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD45097926B45114002D8402 /* HappyMarket.app */,
+				BD4509AB26B45294002D8402 /* HappyMarketWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD45097B26B45114002D8402 /* HappyMarket */ = {
+			isa = PBXGroup;
+			children = (
+				BD23173626B9A38500E63FFD /* HappyMarket.entitlements */,
+				BD45097C26B45114002D8402 /* AppDelegate.swift */,
+				BD45098026B45114002D8402 /* HomeViewController.swift */,
+				BD4509C326B4639D002D8402 /* MemberViewController.swift */,
+				BD4509C526B463B7002D8402 /* ProductDetailViewController.swift */,
+				BD4509C726B464C3002D8402 /* DeliVeryViewController.swift */,
+				BD6814E526BB1B4500F2CEB8 /* NotificationsViewController.swift */,
+				BD6814E726BB1C1600F2CEB8 /* PromotionsViewController.swift */,
+				BD45098226B45114002D8402 /* Main.storyboard */,
+				BD45098526B45116002D8402 /* Assets.xcassets */,
+				BD45098726B45116002D8402 /* LaunchScreen.storyboard */,
+				BD45098A26B45116002D8402 /* Info.plist */,
+			);
+			path = HappyMarket;
+			sourceTree = "<group>";
+		};
+		BD4509AC26B45294002D8402 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD4509AD26B45294002D8402 /* WidgetKit.framework */,
+				BD4509AF26B45294002D8402 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD4509B126B45294002D8402 /* HappyMarketWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BDB3AE1526B70DAB00391C35 /* DB Adman X.ttf */,
+				BD4509BE26B452EB002D8402 /* HappyMarketWidget.swift */,
+				BD90468B26B5BD1000739671 /* SimpleEntry.swift */,
+				BDF3C7CA26BC44E2007F3144 /* ImageLoader.swift */,
+				BDF3C7CB26BC44E2007F3144 /* JsonModel.swift */,
+				BDF3C7C926BC44E2007F3144 /* NetworkManager.swift */,
+				BD90468D26B5BD2600739671 /* HappyMarketWidgetEntryView.swift */,
+				BD90468F26B5C38900739671 /* LargeScaleView.swift */,
+				BD90469126B5C39400739671 /* MediumScaleView.swift */,
+				BD90469326B5C39E00739671 /* SmallScaleView.swift */,
+				BD4509B426B45296002D8402 /* Assets.xcassets */,
+				BD4509B626B45296002D8402 /* Info.plist */,
+			);
+			path = HappyMarketWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD45097826B45114002D8402 /* HappyMarket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD45098D26B45116002D8402 /* Build configuration list for PBXNativeTarget "HappyMarket" */;
+			buildPhases = (
+				BD45097526B45114002D8402 /* Sources */,
+				BD45097626B45114002D8402 /* Frameworks */,
+				BD45097726B45114002D8402 /* Resources */,
+				BD4509BA26B45296002D8402 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD4509B826B45296002D8402 /* PBXTargetDependency */,
+			);
+			name = HappyMarket;
+			productName = HappyMarket;
+			productReference = BD45097926B45114002D8402 /* HappyMarket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD4509AA26B45294002D8402 /* HappyMarketWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD4509BD26B45296002D8402 /* Build configuration list for PBXNativeTarget "HappyMarketWidgetExtension" */;
+			buildPhases = (
+				BD4509A726B45294002D8402 /* Sources */,
+				BD4509A826B45294002D8402 /* Frameworks */,
+				BD4509A926B45294002D8402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HappyMarketWidgetExtension;
+			productName = HappyMarketWidgetExtension;
+			productReference = BD4509AB26B45294002D8402 /* HappyMarketWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD45097126B45114002D8402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BD45097826B45114002D8402 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					BD4509AA26B45294002D8402 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = BD45097426B45114002D8402 /* Build configuration list for PBXProject "HappyMarket" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD45097026B45114002D8402;
+			productRefGroup = BD45097A26B45114002D8402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD45097826B45114002D8402 /* HappyMarket */,
+				BD4509AA26B45294002D8402 /* HappyMarketWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD45097726B45114002D8402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD45098926B45116002D8402 /* LaunchScreen.storyboard in Resources */,
+				BD45098626B45116002D8402 /* Assets.xcassets in Resources */,
+				BD45098426B45114002D8402 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4509A926B45294002D8402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB3AE1626B70DAB00391C35 /* DB Adman X.ttf in Resources */,
+				BD4509B526B45296002D8402 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD45097526B45114002D8402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4509C826B464C3002D8402 /* DeliVeryViewController.swift in Sources */,
+				BD6814E826BB1C1600F2CEB8 /* PromotionsViewController.swift in Sources */,
+				BD4509C426B4639D002D8402 /* MemberViewController.swift in Sources */,
+				BD45098126B45114002D8402 /* HomeViewController.swift in Sources */,
+				BD6814E626BB1B4500F2CEB8 /* NotificationsViewController.swift in Sources */,
+				BD4509C626B463B7002D8402 /* ProductDetailViewController.swift in Sources */,
+				BD45097D26B45114002D8402 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4509A726B45294002D8402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD90469226B5C39400739671 /* MediumScaleView.swift in Sources */,
+				BD90469426B5C39E00739671 /* SmallScaleView.swift in Sources */,
+				BD90468C26B5BD1000739671 /* SimpleEntry.swift in Sources */,
+				BDF3C7CE26BC44E2007F3144 /* JsonModel.swift in Sources */,
+				BDF3C7CC26BC44E2007F3144 /* NetworkManager.swift in Sources */,
+				BD90469026B5C38900739671 /* LargeScaleView.swift in Sources */,
+				BD90468E26B5BD2600739671 /* HappyMarketWidgetEntryView.swift in Sources */,
+				BDF3C7CD26BC44E2007F3144 /* ImageLoader.swift in Sources */,
+				BD4509BF26B452EB002D8402 /* HappyMarketWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD4509B826B45296002D8402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD4509AA26B45294002D8402 /* HappyMarketWidgetExtension */;
+			targetProxy = BD4509B726B45296002D8402 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD45098226B45114002D8402 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD45098326B45114002D8402 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD45098726B45116002D8402 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD45098826B45116002D8402 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD45098B26B45116002D8402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD45098C26B45116002D8402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD45098E26B45116002D8402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HappyMarket/HappyMarket.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QACM97E5R;
+				INFOPLIST_FILE = HappyMarket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpnz.HappyMarket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BD45098F26B45116002D8402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HappyMarket/HappyMarket.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QACM97E5R;
+				INFOPLIST_FILE = HappyMarket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpnz.HappyMarket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BD4509BB26B45296002D8402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HappyMarketWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QACM97E5R;
+				INFOPLIST_FILE = HappyMarketWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpnz.HappyMarket.HappyMarketWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BD4509BC26B45296002D8402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HappyMarketWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QACM97E5R;
+				INFOPLIST_FILE = HappyMarketWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hpnz.HappyMarket.HappyMarketWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD45097426B45114002D8402 /* Build configuration list for PBXProject "HappyMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD45098B26B45116002D8402 /* Debug */,
+				BD45098C26B45116002D8402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD45098D26B45116002D8402 /* Build configuration list for PBXNativeTarget "HappyMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD45098E26B45116002D8402 /* Debug */,
+				BD45098F26B45116002D8402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD4509BD26B45296002D8402 /* Build configuration list for PBXNativeTarget "HappyMarketWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD4509BB26B45296002D8402 /* Debug */,
+				BD4509BC26B45296002D8402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD45097126B45114002D8402 /* Project object */;
+}
