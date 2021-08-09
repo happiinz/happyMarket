@@ -12,7 +12,7 @@ import WidgetKit
 struct LargeScaleView: View {
     var model: JSONModel
     var image: UIImage
-    @AppStorage("logedIn", store: UserDefaults(suiteName: "group.com.hpnz.HappyMarket")) var isLogedIn: Bool = false
+    @AppStorage("logedIn", store: UserDefaults(suiteName: "group.com.hpnz.HappyMarket")) var isLogedIn: Bool = true
     
     var body: some View {
         ZStack {
@@ -48,10 +48,6 @@ struct LargeScaleView: View {
                     .frame(width: geometry.size.width,
                            height: 30,
                            alignment: .center)
-                    .padding(.init(top: 0,
-                                   leading: 0,
-                                   bottom: 0,
-                                   trailing: 0))
                 
                 
                 Link(destination: URL(string: "urlsceheme://logIn")!) {
@@ -67,10 +63,7 @@ struct LargeScaleView: View {
                                               relativeTo: .caption))
                                 .foregroundColor(.black)
                         )
-                        .padding(.init(top: 0,
-                                       leading: 0,
-                                       bottom: 10,
-                                       trailing: 0))
+                        .padding(.bottom, 10)
                 }
             }.frame(width: geometry.size.width, height: 210, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
