@@ -14,17 +14,15 @@ struct MediumScaleView: View {
     @AppStorage("logedIn", store: UserDefaults(suiteName: "group.com.hpnz.HappyMarket")) var isLogedIn: Bool = false
     
     var body: some View {
-        ZStack {
-            GeometryReader { geometry in
-                HStack{
-                    if isLogedIn {
-                        logedInView(geometry: geometry,
-                                    model: model)
-                    }else {
-                        notLoginView(geometry: geometry)
-                    }
-                    buttonDeeplinkView()
+        GeometryReader { geometry in
+            HStack{
+                if isLogedIn {
+                    logedInView(geometry: geometry,
+                                model: model)
+                }else {
+                    notLoginView(geometry: geometry)
                 }
+                buttonDeeplinkView()
             }
         }
     }

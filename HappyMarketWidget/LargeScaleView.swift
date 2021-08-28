@@ -15,21 +15,19 @@ struct LargeScaleView: View {
     @AppStorage("logedIn", store: UserDefaults(suiteName: "group.com.hpnz.HappyMarket")) var isLogedIn: Bool = true
     
     var body: some View {
-        ZStack {
-            GeometryReader { geometry in
-                VStack {
-                    if isLogedIn {
-                        fistRow(geometry: geometry, model: model)
-                        secoundRow(geometry: geometry, image: image)
-                    }else {
-                        notLoginView(geometry: geometry)
-                    }
-                    thirdRow(geometry: geometry)
-                
-                }.frame(width: geometry.size.width,
-                        height: geometry.size.height,
-                        alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            }
+        GeometryReader { geometry in
+            VStack {
+                if isLogedIn {
+                    fistRow(geometry: geometry, model: model)
+                    secoundRow(geometry: geometry, image: image)
+                }else {
+                    notLoginView(geometry: geometry)
+                }
+                thirdRow(geometry: geometry)
+            
+            }.frame(width: geometry.size.width,
+                    height: geometry.size.height,
+                    alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
     }
     
